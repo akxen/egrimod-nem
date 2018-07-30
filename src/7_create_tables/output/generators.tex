@@ -1,0 +1,32 @@
+\begin{tabular}{rllllll}
+\toprule
+ Col. &                     Col. Name & Format &          Units &        Range &                                                Description &                 Source\tnote{$\dagger$} \\
+\midrule
+ 1 &  DUID &  str &  - &  - &  Unique ID for each unit &  \cite{aemo_data_2018} \\
+ 2 &  STATIONID &  str &  - &  - &  ID of station to which DUID belongs &  \cite{aemo_data_2018} \\
+ 3 &  STATIONNAME &  str &  - &  - &  Name of station to which DUID belongs &  \cite{aemo_data_2018} \\
+ 4 &  NEM\_REGION &  str &  - &  - &  Region in which DUID is located &   \\
+ 5 &  NEM\_ZONE &  str &  - &  - &  Zone in which DUID is located &   \\
+ 6 &  NODE &  int &  - &  $9-940$ &  Node to which DUID is assigned &   \\
+ 7 &  FUEL\_TYPE &  str &  - &  - &  Primary fuel type &  \cite{aemo_data_2018} \\
+ 8 &  FUEL\_CAT &  str &  - &  - &  Primary fuel category &   \\
+ 9 &  EMISSIONS &  float &  tCO$_{2}$/MWh &  $0.0-1.56$ &  Equivalent CO$_{2}$ emissions intensity &  \cite{aemo_current_2018} \\
+ 10 &  SCHEDULE\_TYPE &  str &  - &  - &  Schedule type for unit &  \cite{aemo_data_2018} \\
+ 11 &  REG\_CAP &  float &  MW &  $21-1500$ &  Registered capacity &  \cite{aemo_data_2018} \\
+ 12 &  MIN\_GEN &  float &  MW &  $0.0-347.2$ &  Minimum dispatchable output &  \cite{aemo_data_2018, aemo_ntndp_2018} \\
+ 13 &  RR\_STARTUP &  float &  MW/h &  $60-12000$ &  Ramp-rate for start-up &  \cite{aemo_ntndp_2018} \\
+ 14 &  RR\_SHUTDOWN &  float &  MW/h &  $40-9740$ &  Ramp-rate for shut-down &  \cite{aemo_ntndp_2018} \\
+ 15 &  RR\_UP &  float &  MW/h &  $60-12000$ &  Ramp-rate up when running &  \cite{aemo_ntndp_2018} \\
+ 16 &  RR\_DOWN &  float &  MW/h &  $60-10080$ &  Ramp-rate down when running &  \cite{aemo_ntndp_2018} \\
+ 17 &  MIN\_ON\_TIME &  int &  h &  $0-16$ &  Minimum on time &  \cite{aemo_ntndp_2018} \\
+ 18 &  MIN\_OFF\_TIME &  int &  h &  $0-16$ &  Minimum off time &  \cite{aemo_ntndp_2018} \\
+ 19 &  SU\_COST\_COLD &  int &  \$ &  $0-260400$ &  Cold start start-up cost &  \cite{aemo_ntndp_2018} \\
+ 20 &  SU\_COST\_WARM &  int &  \$ &  $0-29760$ &  Warm start start-up cost &  \cite{aemo_ntndp_2018} \\
+ 21 &  SU\_COST\_HOT &  int &  \$ &  $0-89280$ &  Hot start start-up cost &  \cite{aemo_ntndp_2018} \\
+ 22 &  VOM &  float &  \$/MWh &  $0.0-12.5$ &  Variable operations and maintenance costs &  \cite{aemo_ntndp_2018} \\
+ 23 &  HEAT\_RATE\tnote{$\ddagger$} &  float &  GJ/MWh &  $0.0-15.7$ &  Heat rate &  \cite{aemo_ntndp_2018} \\
+ 24 &  NL\_FUEL\_CONS &  float &  - &  $0.0-0.3$ &  No-load fuel consumption as a \% of full load consumption &  \cite{aemo_ntndp_2018} \\
+ 25 &  FC\_2016-17 &  float &  \$/GJ &  $0.0-8.6$ &  Fuel cost for the year 2016-17 &  \cite{aemo_ntndp_2018} \\
+ 26 &  SRMC\_2016-17 &  float &  \$/MWh &  $0.0-129.7$ &  Short-run marginal cost for the year 2016-17 &   \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,12 @@
+\begin{tabular}{rlllll}
+\toprule
+ Col. &           Col. Name & Format & Units &      Range &                                Description \\
+\midrule
+ 1 &  HVDC\_LINK\_ID &  str &  - &  - &  HVDC link ID \\
+ 2 &  FROM\_NODE &  int &  - &  $605-806$ &  Node ID of origin node \\
+ 3 &  TO\_NODE &  int &  - &  $88-298$ &  Node ID of destination node \\
+ 4 &  FORWARD\_LIMIT\_MW &  float &  MW &  $180-594$ &  `From' node to `To' node power-flow limit \\
+ 5 &  REVERSE\_LIMIT\_MW &  float &  MW &  $180-478$ &  `To' node to `From' node power-flow limit \\
+ 6 &  VOLTAGE\_KV &  float &  kV &  $132-400$ &  HVDC link voltage \\
+\bottomrule
+\end{tabular}

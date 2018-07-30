@@ -1,0 +1,490 @@
+id,name,STATE,PRIMARYFUELTYPE,GENERATIONMW
+kml_1,Repulse,Tasmania,Water,28
+kml_2,Gordon,Tasmania,Water,432
+kml_3,John Butters,Tasmania,Water,144
+kml_4,Tribute,Tasmania,Water,82.8
+kml_5,Bastyan,Tasmania,Water,79.9
+kml_6,Reece,Tasmania,Water,238
+kml_7,Mackintosh,Tasmania,Water,79.9
+kml_8,Cethana,Tasmania,Water,85
+kml_9,Wilmot,Tasmania,Water,81.6
+kml_10,Devils Gate,Tasmania,Water,60
+kml_11,Paloona,Tasmania,Water,28
+kml_12,Bell Bay (Bell Bay Three),Tasmania,Natural Gas,115
+kml_13,Trevallyn,Tasmania,Water,80
+kml_14,Poatina,Tasmania,Water,100
+kml_15,Lake Echo,Tasmania,Water,32.4
+kml_16,Codrington Wind Farm,Victoria,Wind,18.2
+kml_17,Yambuk Wind Farm,Victoria,Wind,30
+kml_18,Macarthur Wind Farm,Victoria,Wind,420
+kml_19,Mortlake,Victoria,Natural Gas,566
+kml_20,Mt Mercer Wind Farm,Victoria,Wind,131
+kml_21,Waubra Wind Farm,Victoria,Wind,192
+kml_22,Challicum Hills Wind Farm,Victoria,Wind,52.5
+kml_23,Shepparton Biogas Generation Plant,Victoria,Biogas,1.1
+kml_24,Dartmouth (Mount Beauty Hydro Scheme),Victoria,Water,150
+kml_25,Banimboola,Victoria,Water,12.85
+kml_26,Lake William Hovell,Victoria,Water,2
+kml_27,Eildon,Victoria,Water,120
+kml_28,Laverton North,Victoria,Natural Gas,312
+kml_29,Newport,Victoria,Natural Gas,500
+kml_30,Claytons,Victoria,Biogas,11
+kml_31,Springvale,Victoria,Biogas,4.2
+kml_32,Hallam Road,Victoria,Biogas,8.984
+kml_33,Yallourn,Victoria,Coal,1480
+kml_34,Jeeralang B,Victoria,Natural Gas,228
+kml_35,Jeeralang A,Victoria,Natural Gas,204
+kml_36,Loy Yang A,Victoria,Coal,2180
+kml_37,Loy Yang B,Victoria,Coal,1000
+kml_38,Valley (Peaking Facility),Victoria,Natural Gas,300
+kml_39,Bairnsdale,Victoria,Natural Gas,94
+kml_40,Yarrawonga,Victoria,Water,9
+kml_41,Hume,New South Wales,Water,70
+kml_42,Canunda Wind Farm,South Australia,Wind,46
+kml_43,Snuggery,South Australia,Natural Gas,63
+kml_44,Dry Creek,South Australia,Natural Gas,156
+kml_45,Torrens Island A,South Australia,Natural Gas,480
+kml_46,Torrens Island B,South Australia,Natural Gas,800
+kml_47,Osborne,South Australia,Natural Gas,180
+kml_48,Pelican Point,South Australia,Natural Gas,478
+kml_49,Quarantine,South Australia,Natural Gas,224
+kml_50,Angaston,South Australia,Distillate,50
+kml_51,Waterloo Wind Farm,South Australia,Wind,111
+kml_52,Wattle Point Wind Farm,South Australia,Wind,90.75
+kml_53,Mintaro,South Australia,Natural Gas,90
+kml_54,Hallett 1 Brown Hill  Wind Farm,South Australia,Wind,94.5
+kml_55,Hallett,South Australia,Natural Gas,228.3
+kml_56,Hallett 2 Hallet Hill  Wind Farm,South Australia,Wind,71.4
+kml_57,Port Lincoln,South Australia,Distillate,73.5
+kml_58,Cathedral Rocks Wind Farm,South Australia,Wind,66
+kml_59,Channel Island,Northern Territory,Natural Gas,310
+kml_60,Weddell,Northern Territory,Natural Gas,86
+kml_61,Ord River,Western Australia,Water,30
+kml_62,Muja D,Western Australia,Coal,454
+kml_63,Kemerton,Western Australia,Natural Gas,260.9
+kml_64,Pinjar,Western Australia,Natural Gas,576
+kml_65,Emu Downs Wind Farm,Western Australia,Wind,79.2
+kml_66,Collie A,Western Australia,Coal,340
+kml_67,Collie (Bluewaters),Western Australia,Coal,416
+kml_68,Wagerup,Western Australia,Natural Gas,380
+kml_69,Kwinana Cogeneration,Western Australia,Natural Gas,123
+kml_70,Kwinana High Efficiency Gas Turbine Plant,Western Australia,Natural Gas,200
+kml_71,Kwinana A,Western Australia,Coal,240
+kml_72,Kwinana C,Western Australia,Coal,184
+kml_73,Cockburn,Western Australia,Natural Gas,240
+kml_74,Kalgoorlie (Parkeston),Western Australia,Natural Gas,110
+kml_75,Collgar Wind Farm,Western Australia,Wind,206
+kml_76,Merredin,Western Australia,Gas,82
+kml_77,Mungarra,Western Australia,Natural Gas,112
+kml_78,Geraldton,Western Australia,Natural Gas,21
+kml_79,Paraburdoo,Western Australia,Natural Gas,155
+kml_80,Dampier,Western Australia,Natural Gas,120
+kml_81,Yurralyi Maya (Karratha Seven Mile),Western Australia,Natural Gas,180
+kml_82,Wonthaggi Wind Farm,Victoria,Wind,12
+kml_83,Walkaway Wind Farm,Western Australia,Wind,90
+kml_84,Cullerin Range Wind Farm,New South Wales,Wind,30
+kml_85,Snowtown North,South Australia,Wind,148
+kml_86,Cape Bridgewater Wind Farm,Victoria,Wind,58
+kml_87,Barcaldine (Len Wishaw),Queensland,Natural Gas,37
+kml_88,Bluff Point (Woolnorth) Wind Farm,Tasmania,Wind,65
+kml_89,Studland Bay (Woolnorth) Wind Farm,Tasmania,Wind,75
+kml_90,The Drop,New South Wales,Water,3
+kml_91,Pindari,New South Wales,Water,6.7
+kml_92,Nieterana,Tasmania,Water,2.2
+kml_93,Oakland Hills Wind Farm,Victoria,Wind,67
+kml_94,Tatura Biogas Generation Plant,Victoria,Biogas,1.1
+kml_95,Jindabyne Dam Mini Hydro,New South Wales,Water,1.1
+kml_96,North Brown Hill  Wind Farm,South Australia,Wind,132.3
+kml_97,Clements Gap Wind Farm,South Australia,Wind,57
+kml_98,Wyangala A,New South Wales,Water,20
+kml_99,Blayney Wind Farm,New South Wales,Wind,9.9
+kml_100,Woodlawn Wind Farm,New South Wales,Wind,48
+kml_101,Woodlawn Bioreactor,New South Wales,Biogas,7
+kml_102,West Nowra (Shoalhaven),New South Wales,Biogas,1
+kml_103,Tumut 3,New South Wales,Water,1500
+kml_104,Summerhill,New South Wales,Biogas,2.2
+kml_105,Mugga Lane,Australian Capital Territory,Biogas,3.5
+kml_106,Lucas Heights II,New South Wales,Biogas,16
+kml_107,Lucas Heights I,New South Wales,Biogas,5.39
+kml_108,Jounama,New South Wales,Water,14
+kml_109,Jacks Gully,New South Wales,Biogas,2.3
+kml_110,Gunning,New South Wales,Wind,47
+kml_111,Grange Avenue,New South Wales,Biogas,2
+kml_112,Esperance Wind Farm Nine Mile Beach,Western Australia,Wind,3.6
+kml_113,Eastern Creek 2,New South Wales,Biogas,8.984
+kml_114,Eastern Creek,New South Wales,Biogas,5.4
+kml_115,Crookwell Wind Farm,New South Wales,Wind,4.8
+kml_116,Capital Hill Wind Farm,New South Wales,Wind,140
+kml_117,Burrinjuck Power Station,New South Wales,Water,27
+kml_118,Awaba,New South Wales,Biogas,1.1
+kml_119,Windy Hill Wind Farm,Queensland,Wind,12
+kml_120,Starfish Hill Wind Farm,South Australia,Wind,34.5
+kml_121,Pioneer Sugar Mill,Queensland,Biomass,67.8
+kml_122,Moranbah North,Queensland,Natural Gas,45.7
+kml_123,Koombooloomba,Queensland,Water,7.3
+kml_124,Invicta Sugar Mill,Queensland,Biomass,150
+kml_125,Wivenhoe,Queensland,Water,4.7
+kml_126,Terminal Storage,South Australia,Water,2.5
+kml_127,Suncoast Gold Macadamia,Queensland,Biomass,1.5
+kml_128,Rocky Point Sugar Sugar Mill,Queensland,Biomass,30
+kml_129,Mount Millar Wind Farm,South Australia,Wind,70
+kml_130,Lake Bonney Stage 2 Wind Farm,South Australia,Wind,159
+kml_131,Albany Wind Farm,Western Australia,Wind,21.6
+kml_132,Wyndham,Victoria,Biogas,1
+kml_133,Wollert,Victoria,Biogas,6.738
+kml_134,Whitwood Road,Queensland,Biogas,1
+kml_135,Toora Wind Farm,Victoria,Wind,21
+kml_136,Ti Tree Bioenergy,Queensland,Biogas,3.3
+kml_137,Roghan Road,Queensland,Biogas,2
+kml_138,Rochedale,Queensland,Biogas,4
+kml_139,Plane Creek Sugar Mill,Queensland,Biomass,14
+kml_140,Browns Plains,Queensland,Biogas,2.2
+kml_141,Brooklyn,Victoria,Biogas,2.83
+kml_142,Berwick,Victoria,Biogas,7.2
+kml_143,Broadmeadows,Victoria,Biogas,12.2
+kml_144,Energy Brix,Victoria,Coal,195
+kml_145,Lake Glenmaggie,Victoria,Water,4
+kml_146,Hazelwood,Victoria,Coal,1600
+kml_147,Longford,Victoria,Natural Gas,31
+kml_148,Mornington,Victoria,Biogas,1
+kml_149,Rubicon,Victoria,Water,13.55
+kml_150,Somerton,Victoria,Natural Gas,160
+kml_151,Symex Port Melbourne,Victoria,Natural Gas,5.9
+kml_152,Bogong (Mount Beauty Hydro Scheme),Victoria,Water,300
+kml_153,Clover,Victoria,Water,30
+kml_154,McKay Creek (Mount Beauty Hydro Scheme),Victoria,Water,150
+kml_155,West Kiewa (Mount Beauty Hydro Scheme),Victoria,Water,62
+kml_156,Murray 2,New South Wales,Water,552
+kml_157,Murray 1,New South Wales,Water,950
+kml_158,Cape Sir William Grant Wind Farm,Victoria,Wind,54
+kml_159,Cape Nelson South Wind Farm,Victoria,Wind,44
+kml_160,Cape Nelson North Wind Farm,Victoria,Wind,22
+kml_161,Ballarat Base Hospital,Victoria,Natural Gas,3
+kml_162,Anglesea,Victoria,Coal,165
+kml_163,Remount,Tasmania,Biogas,2.2
+kml_164,Wayatinah,Tasmania,Water,38.3
+kml_165,Tungatinah,Tasmania,Water,125
+kml_166,Tods Corner,Tasmania,Water,1.7
+kml_167,Tarraleah,Tasmania,Water,90
+kml_168,Meadowbank,Tasmania,Water,40
+kml_169,Liapootah,Tasmania,Water,87.3
+kml_170,Cluny,Tasmania,Water,17
+kml_171,Catagunya,Tasmania,Water,48
+kml_172,Butlers Gorge,Tasmania,Water,14.4
+kml_173,Rowallan,Tasmania,Water,10.5
+kml_174,Lower Lake Margaret,Tasmania,Water,3.2
+kml_175,Lemonthyme,Tasmania,Water,81.6
+kml_176,Upper Lake Margaret,Tasmania,Water,8.4
+kml_177,Fisher,Tasmania,Water,43.2
+kml_178,Tamar Valley,Tasmania,Natural Gas,390
+kml_179,Inkerman Sugar Mill,Queensland,Biomass,10.5
+kml_180,Mackay,Queensland,Natural Gas,30
+kml_181,Roma,Queensland,Natural Gas,80
+kml_182,Swanbank B,Queensland,Coal,480
+kml_183,Swanbank E,Queensland,Natural Gas,385
+kml_184,Wivenhoe Hydroelectric,Queensland,Water,500
+kml_185,Barron Gorge,Queensland,Water,60
+kml_186,Braemar 1,Queensland,Natural Gas,504
+kml_187,Braemar 2,Queensland,Natural Gas,519
+kml_188,Condamine A,Queensland,Natural Gas,144
+kml_189,Daandine,Queensland,Natural Gas,33
+kml_190,Darling Downs,Queensland,Natural Gas,644
+kml_191,German Creek,Queensland,Natural Gas,45.2
+kml_192,Gladstone,Queensland,Coal,1680
+kml_193,Isis Central Sugar Mill,Queensland,Biomass,25
+kml_194,Kalamia Sugar Mill,Queensland,Biomass,9
+kml_195,Kareeya,Queensland,Water,88
+kml_196,Kogan Creek,Queensland,Coal,744
+kml_197,Millmerran,Queensland,Coal,856
+kml_198,Moranbah,Queensland,Natural Gas,12.56
+kml_199,Mount Stuart,Queensland,Distillate,423
+kml_200,Oakey,Queensland,Natural Gas,282
+kml_201,Oaky Creek,Queensland,Natural Gas,20
+kml_202,Stanwell,Queensland,Coal,1460
+kml_203,Tarong,Queensland,Fuel Oil,15
+kml_204,Tarong North,Queensland,Coal,443
+kml_205,Tarong,Queensland,Coal,1400
+kml_206,Townsville,Queensland,Natural Gas,220
+kml_207,Yarwun,Queensland,Natural Gas,154
+kml_208,Macknade Sugar Mill,Queensland,Biomass,8
+kml_209,Victoria Sugar Mill,Queensland,Biomass,24
+kml_210,Callide C,Queensland,Coal,840
+kml_211,Callide B,Queensland,Coal,700
+kml_212,Callide A,Queensland,Coal,30
+kml_213,Collinsville,Queensland,Coal,190
+kml_214,Broome,Western Australia,Natural Gas,39.6
+kml_215,Burrup Peninsula (Karratha Gas Plant),Western Australia,Natural Gas,240
+kml_216,Burrup Peninsula (Pluto Phase 1),Western Australia,Natural Gas,160
+kml_217,Esperance,Western Australia,Natural Gas,33
+kml_218,Karratha,Western Australia,Natural Gas,86
+kml_219,Kwinana (Alcoa Refinery),Western Australia,Natural Gas,74.5
+kml_220,Kwinana,Western Australia,Natural Gas,21
+kml_221,Kwinana NewGen,Western Australia,Natural Gas,320
+kml_222,Kwinana Swift,Western Australia,Natural Gas,120
+kml_223,Neerabup,Western Australia,Natural Gas,330
+kml_224,Newman Iron Ore Mine,Western Australia,Natural Gas,170
+kml_225,Pinjarra Bauxite Mine and Alumina Refinery,Western Australia,Natural Gas,280
+kml_226,Ravensthorpe,Western Australia,Distillate,56
+kml_227,Wagerup Bauxite Mine and Alumina Refinery,Western Australia,Natural Gas,98
+kml_228,West Kalgoorlie,Western Australia,Distillate,60
+kml_229,Port Hedland,Western Australia,Natural Gas,126
+kml_230,Mount Magnet,Western Australia,Natural Gas,1.9
+kml_231,Kalgoorlie Nickel Smelter,Western Australia,Natural Gas,42
+kml_232,Kambalda,Western Australia,Natural Gas,42
+kml_233,Leinster Nickel Mine,Western Australia,Natural Gas,59
+kml_234,Mount Keith Nickel Mine,Western Australia,Natural Gas,112
+kml_235,Muja C,Western Australia,Coal,400
+kml_236,Worsley Cogeneration,Western Australia,Natural Gas,106
+kml_237,Laverton (Granny Smith Gold Mine),Western Australia,Distillate,30.6
+kml_238,Argyle Diamond Mine,Western Australia,Distillate,32
+kml_239,Christmas Creek Iron Ore Mine,Western Australia,Distillate,58
+kml_240,Jundee Gold Mine,Western Australia,Natural Gas,21
+kml_241,Murrin Murrin (Nickel Mine),Western Australia,Natural Gas,78
+kml_242,Plutonic Gold Mine,Western Australia,Natural Gas,28
+kml_243,Sunrise Dam,Western Australia,Natural Gas,28.4
+kml_244,Wiluna Gold Mine,Western Australia,Natural Gas,21
+kml_245,Paraburdoo (Standby),Western Australia,Natural Gas,20
+kml_246,Telfer Gold Mine,Western Australia,Natural Gas,159
+kml_247,Amcor Gawler,South Australia,Distillate,4
+kml_248,Lonsdale,South Australia,Distillate,20
+kml_249,Pedler Creek,South Australia,Biogas,3
+kml_250,Wingfield I,South Australia,Biogas,5
+kml_251,Wingfield II,South Australia,Biogas,5
+kml_252,Ladbroke Grove,South Australia,Natural Gas,80
+kml_253,Playford B,South Australia,Coal,240
+kml_254,Northern,South Australia,Coal,530
+kml_255,Berrimah,Northern Territory,Natural Gas,10
+kml_256,Landfill Management Services Shoal Bay,Northern Territory,Biogas,1.1
+kml_257,Tennant Creek,Northern Territory,Natural Gas,16.7
+kml_258,Ron Goodin,Northern Territory,Natural Gas,44.6
+kml_259,Owen Springs,Northern Territory,Natural Gas,36
+kml_260,Brewer,Northern Territory,Natural Gas,8.5
+kml_261,Yulara,Northern Territory,Compressed Natural Gas,10.95
+kml_262,Pine Creek,Northern Territory,Natural Gas,34.76
+kml_263,Katherine,Northern Territory,Natural Gas,34.7
+kml_264,Warrego,Northern Territory,Natural Gas,19
+kml_265,Condong Sugar Mill,New South Wales,Biomass,30
+kml_266,Appin (Mine),New South Wales,Natural Gas,55.6
+kml_267,Bayswater,New South Wales,Coal,2640
+kml_268,Bendeela (Shoalhaven Scheme),New South Wales,Water,240
+kml_269,Blowering,New South Wales,Water,70
+kml_270,Broadwater,New South Wales,Biomass,38
+kml_271,Brown Mountain,New South Wales,Water,4.95
+kml_272,Capral (Aluminium Smelter),New South Wales,Natural Gas,300
+kml_273,Colongra,New South Wales,Natural Gas,724
+kml_274,EarthPower Biomass Plant,New South Wales,Biogas,3.9
+kml_275,Eraring,New South Wales,Distillate,41.5
+kml_276,Visy Pulp and Paper Tumut,New South Wales,Biomass,20
+kml_277,Glenbawn,New South Wales,Water,5.8
+kml_278,Glennies Creek,New South Wales,Coal Seam Methane,13
+kml_279,Hunter,New South Wales,Distillate,29
+kml_280,Hunter Valley,New South Wales,Natural Gas,50
+kml_281,Kangaroo Valley (Shoalhaven Scheme),New South Wales,Water,160
+kml_282,Liddell,New South Wales,Coal,2200
+kml_283,Mt Piper,New South Wales,Coal,1400
+kml_284,Munmorah,New South Wales,Coal,600
+kml_285,Nymboida,New South Wales,Water,33.6
+kml_286,Oaky,New South Wales,Water,4.8
+kml_287,Redbank,New South Wales,Coal,150
+kml_288,Smithfield Energy,New South Wales,Natural Gas,170.9
+kml_289,Tahmoor,New South Wales,Coal Seam Methane,7
+kml_290,Tallawarra,New South Wales,Natural Gas,460
+kml_291,Teralba,New South Wales,Natural Gas,3
+kml_292,Tomago Aluminium Smelter,New South Wales,Natural Gas,810
+kml_293,Tower Mine,New South Wales,Coal Seam Methane,41.2
+kml_294,Tumut 1 (Upper Tumut),New South Wales,Water,616
+kml_295,Tumut 2 (Upper Tumut),New South Wales,Water,336
+kml_296,Uranquinty,New South Wales,Natural Gas,664
+kml_297,Vales Point B,New South Wales,Coal,1360
+kml_298,Wallerawang C,New South Wales,Coal,500
+kml_299,Warragamba,New South Wales,Water,50
+kml_300,West Illawarra Leagues Club,New South Wales,Distillate,1
+kml_301,Western Suburbs Leagues Club (Campbelltown),New South Wales,Distillate,1
+kml_302,Burrendong,New South Wales,Water,19
+kml_303,Copeton,New South Wales,Water,24
+kml_304,Wilga Park,New South Wales,Coal Seam Methane,16
+kml_305,Guthega,New South Wales,Water,80
+kml_306,Lake Keepit,New South Wales,Water,6.5
+kml_307,Broken Hill,New South Wales,Natural Gas,50
+kml_308,Eraring,New South Wales,Coal,2880
+kml_309,Maryvale Mill,Victoria,Biomass,54.5
+kml_310,Grasmere Wind Farm (Albany stage II),Western Australia,Wind,13.8
+kml_311,Tully Sugar Mill,Queensland,Biomass,21.4
+kml_312,Proserpine Sugar Mill,Queensland,Biomass,17
+kml_313,North Sydney,New South Wales,Natural Gas,0.8
+kml_314,Sydney,New South Wales,Natural Gas,0.8
+kml_315,North Sydney,New South Wales,Natural Gas,2.4
+kml_316,Blackmores,New South Wales,Natural Gas,0.8
+kml_317,Nine Network,New South Wales,Distillate,3.2
+kml_318,Revesby Workers Club,New South Wales,Distillate,2.5
+kml_319,St George Leagues Club,New South Wales,Distillate,1
+kml_320,University of New South Wales,New South Wales,Natural Gas,0.8
+kml_321,Norseman Mine,Western Australia,Distillate,9
+kml_322,Darlot Gold Mine,Western Australia,Natural Gas,11.7
+kml_323,Windimurra Vanadium Mine,Western Australia,Natural Gas,23.7
+kml_324,Rottnest Island Wind Turbine,Western Australia,Wind,0.6
+kml_325,Cloudbreak,Western Australia,Distillate,44
+kml_326,Port Hedland,Western Australia,Natural Gas,84
+kml_327,Noranda,Western Australia,Biogas,1.1
+kml_328,Red Hill,Western Australia,Biogas,3.65
+kml_329,Shenton Park WMRC Project,Western Australia,Biogas,1
+kml_330,Kalamunda,Western Australia,Distillate,1.3
+kml_331,Canning Vale,Western Australia,Biogas,4
+kml_332,Gosnells,Western Australia,Biogas,1.1
+kml_333,KRC Cogeneration Plant,Queensland,Natural Gas,4.2
+kml_334,Melbourne,Victoria,Natural Gas,1.2
+kml_335,Carlton,Victoria,Natural Gas,0.4
+kml_336,Eildon Small Hydro,Victoria,Water,5
+kml_337,Corio,Victoria,Biogas,1
+kml_338,South East Water Hallam Plant,Victoria,Water,0.25
+kml_339,Lower Rubicon,Victoria,Water,13.55
+kml_340,Royston,Victoria,Water,0.9
+kml_341,Rubicon Falls,Victoria,Water,0.3
+kml_342,Leonards Hill,Victoria,Wind,4.1
+kml_343,Box Hill,New South Wales,Wind,25
+kml_344,Highbury,South Australia,Biogas,2
+kml_345,Tea Tree Gully,South Australia,Biogas,1
+kml_346,Port Stanvac,South Australia,Distillate,57.6
+kml_347,Maryborough,Queensland,Biomass,7.5
+kml_348,Stapylton Green Energy,Queensland,Biomass,4.8
+kml_349,Bremer Bay Wind Turbine,Western Australia,Wind,0.6
+kml_350,Bremer Bay Diesel Backup,Western Australia,Distillate,1.3
+kml_351,Coral Bay Wind Turbines,Western Australia,Wind,0.83
+kml_352,Coral Bay Diesel Backup,Western Australia,Distillate,2.24
+kml_353,Denham Wind Turbines,Western Australia,Wind,0.92
+kml_354,Denham Diesel Backup,Western Australia,Distillate,1.6
+kml_355,Woodman Point,Western Australia,Biogas,1.8
+kml_356,Henderson,Western Australia,Biogas,3.2
+kml_357,Tamala Park,Western Australia,Biogas,4.65
+kml_358,Mandurah,Western Australia,Biogas,1.3
+kml_359,Rockingham,Western Australia,Biogas,2.1
+kml_360,South Cardup (Shale Road Landfill),Western Australia,Biogas,3.3
+kml_361,Cue,Western Australia,Distillate,0.8
+kml_362,Sandstone,Western Australia,Distillate,0.4
+kml_363,Nullagine Solar Farm,Western Australia,Solar,0.2
+kml_364,Nullagine Diesel Backup,Western Australia,Distillate,0.96
+kml_365,Marble Bar Solar Farm,Western Australia,Solar,0.3
+kml_366,Marble Bar Diesel Backup,Western Australia,Distillate,1.28
+kml_367,Derby,Western Australia,Natural Gas,12.53
+kml_368,Fitzroy Crossing,Western Australia,Natural Gas,4.06
+kml_369,Halls Creek,Western Australia,Natural Gas,3.69
+kml_370,Warmun,Western Australia,Distillate,1.3
+kml_371,Kununurra,Western Australia,Distillate,12.4
+kml_372,Laverton,Western Australia,Distillate,1.5
+kml_373,Exmouth,Western Australia,Natural Gas,8
+kml_374,Tableland,Queensland,Biomass,7
+kml_375,South Johnstone,Queensland,Biomass,20
+kml_376,Mulgrave,Queensland,Biomass,13
+kml_377,Blue Lake Milling Power Plant,South Australia,Distillate,1
+kml_378,Tatiara Meats,South Australia,Distillate,0.5
+kml_379,Kalumburu,Western Australia,Distillate,0.7
+kml_380,Ardyaloon,Western Australia,Distillate,0.8
+kml_381,Djarindjin,Western Australia,Distillate,0.7
+kml_382,Beagle Bay,Western Australia,Distillate,0.7
+kml_383,Bidyadanga,Western Australia,Distillate,1.3
+kml_384,Gascoyne Junction,Western Australia,Distillate,0.4
+kml_385,Wiluna,Western Australia,Distillate,1.3
+kml_386,Yalgoo,Western Australia,Distillate,0.4
+kml_387,Carnarvon,Western Australia,Natural Gas,15
+kml_388,Mungullah,Western Australia,Natural Gas,18
+kml_389,Exmouth Advanced Mini Wind Farm,Western Australia,Wind,0.06
+kml_390,Worsley,Western Australia,Coal,120
+kml_391,Kalbarri PV System,Western Australia,Solar,0.02
+kml_392,Esperance Wind Farm Ten Mile Lagoon,Western Australia,Wind,2.03
+kml_393,Muja B,Western Australia,Coal,120
+kml_394,Muja A,Western Australia,Coal,120
+kml_395,Boco Rock,New South Wales,Wind,113
+kml_396,Ben Lomond,New South Wales,Wind,200
+kml_397,Bamarang,New South Wales,Natural Gas,320
+kml_398,Bango Wind Farm,New South Wales,Wind,200
+kml_399,Bankstown Sports Club,New South Wales,Distillate,2
+kml_400,Belconnen,Australian Capital Territory,Biogas,1
+kml_401,Charlestown Square,New South Wales,Natural Gas,2.8
+kml_402,Club Merrylands,New South Wales,Distillate,0.8
+kml_403,Erskine Park,New South Wales,Natural Gas,0.4
+kml_404,Kooragang,New South Wales,Wind,0.6
+kml_405,Kalbarri Wind Farm,Western Australia,Wind,1.7
+kml_406,Wodgina,Western Australia,Natural Gas,13.7
+kml_407,Savannah Nickel Mine,Western Australia,Distillate,10.8
+kml_408,Meekatharra,Western Australia,Distillate,2.9
+kml_409,Leonora,Western Australia,Natural Gas,4.43
+kml_410,Menzies,Western Australia,Distillate,0.3
+kml_411,Onslow,Western Australia,Natural Gas,3.6
+kml_412,Hopetoun Diesel Backup,Western Australia,Distillate,1.3
+kml_413,Hopetoun Wind Turbines,Western Australia,Wind,1.2
+kml_414,Camballin,Western Australia,Natural Gas,1.04
+kml_415,Cawse Nickel Mine,Western Australia,Natural Gas,21
+kml_416,Buronga,New South Wales,Natural Gas,150
+kml_417,Glenorchy,Tasmania,Biogas,1.6
+kml_418,Hobart,Tasmania,Biogas,1
+kml_419,Musselroe,Tasmania,Wind,168
+kml_420,Kings Canyon,Northern Territory,Solar,0.24
+kml_421,Bodangora Wind Farm,New South Wales,Wind,100
+kml_422,Broken Hill Solar Plant,New South Wales,Solar,53
+kml_423,McArthur River Mine,Northern Territory,Natural Gas,78
+kml_424,University of Queensland (St Lucia Campus) Solar Array,Queensland,Solar,1.2
+kml_425,Perth Zoo,Western Australia,Solar,2.37
+kml_426,Tulla Calder Interchange Solar Array,Victoria,Solar,0.24
+kml_427,Bridgewater Solar,Victoria,Solar,0.14
+kml_428,Monash University (Clayton Campus) Solar Array,Victoria,Solar,0.18
+kml_429,Queen Victoria Market Solar Array,Victoria,Solar,0.25
+kml_430,Bendigo Solar Park,Victoria,Solar,0.3
+kml_431,Adelaide Showgrounds,South Australia,Solar,1
+kml_432,Adelaide Airport,South Australia,Solar,0.11
+kml_433,Townsville RSL Stadium Solar Array,Queensland,Solar,0.34
+kml_434,Fraser Coast Community Solar Farm,Queensland,Solar,0.4
+kml_435,Metricon (Gold Coast) Stadium Solar Array,Queensland,Solar,0.22
+kml_436,Carnarvon Solar Farm,Western Australia,Solar,0.29
+kml_437,CSIRO Energy Centre,New South Wales,Solar,1.5
+kml_438,Newington Solar Suburb,New South Wales,Solar,0.67
+kml_439,Singleton Solar Farm,New South Wales,Solar,0.39
+kml_440,Kogarah Town Square Solar Array,New South Wales,Solar,0.16
+kml_441,Stadium Australia,New South Wales,Solar,0.14
+kml_442,Mt Gambier,South Australia,Biomass,10
+kml_443,Narrogin Bioenergy Plant,Western Australia,Biomass,1
+kml_444,Visy Paper Gibson Island,Queensland,Biomass,2
+kml_445,Mica Creek,Queensland,Natural Gas,325
+kml_446,Wilpena Solar Farm,South Australia,Solar,145
+kml_447,Mildura Solar Farm,Victoria,Solar,1.5
+kml_448,King Island (Currie),Tasmania,Distillate,8.55
+kml_449,West Angelas Mine,Western Australia,Gas,86
+kml_450,Cannington Mine,Queensland,Natural Gas,40
+kml_451,Hallett 1 Brown Hill  Wind Farm,South Australia,Wind,94.5
+kml_452,Hallet 5 - The Bluff,South Australia,Wind,52.5
+kml_453,Hallett 2 Hallet Hill  Wind Farm,South Australia,Wind,71.4
+kml_454,Snowtown South,South Australia,Wind,126
+kml_455,Cape Preston,Western Australia,Natural Gas,450
+kml_456,Solomon Iron Ore Mine,Western Australia,Natural Gas,125
+kml_457,Diamantina,Queensland,Natural Gas,242
+kml_458,Leichhardt,Queensland,Natural Gas,60
+kml_459,Bulwer Island,Queensland,Natural Gas,33
+kml_460,Cape Lambert,Western Australia,Natural Gas,105
+kml_461,Ernabella,South Australia,Distillate,0.01
+kml_462,Umuwa,South Australia,Solar,0.35
+kml_463,Yuendumu,Northern Territory,Solar,0.24
+kml_464,Lajamanu,Northern Territory,Solar,0.29
+kml_465,Windorah,Queensland,Solar,0.13
+kml_466,DoubleTree by Hilton Hotel,Northern Territory,Solar,0.3
+kml_467,Alice Springs Airport,Northern Territory,Solar,0.24
+kml_468,Uterne Solar,Northern Territory,Solar,1
+kml_469,Hermannsburg,Northern Territory,Solar,0.19
+kml_470,Ballarat Solar Park,Victoria,Solar,0.3
+kml_471,Liddell Solar Thermal,New South Wales,Solar,9.3
+kml_472,Greenough River Solar Farm,Western Australia,Solar,10
+kml_473,Mumbida Wind Farm,Western Australia,Wind,55
+kml_474,Nyngan Solar Plant,New South Wales,Solar,102
+kml_475,Wadeye,Northern Territory,Natural Gas,6.8
+kml_476,Traralgon Network Support Station,Victoria,Biogas,10
+kml_477,Gullen Range Wind Farm,New South Wales,Wind,166
+kml_478,Lake Bonney Stage 1 Wind Farm,South Australia,Wind,80.5
+kml_479,Lake Bonney Stage 3 Wind Farm,South Australia,Wind,39
+kml_480,Royalla Solar farm,Australian Capital Territory,Wind,20
+kml_481,Timber Creek,Northern Territory,Diesel,1
+kml_482,Daly Waters,Northern Territory,Solar,0.2
+kml_483,Elliott,Northern Territory,Diesel,1
+kml_484,Ti-Tree,Northern Territory,Solar,0.3
+kml_485,Roy Hill,Western Australia,Distillate,6
+kml_486,Moree,New South Wales,Solar,60
+kml_487,Gullen Range Wind Farm,New South Wales,Wind,165.5
+kml_488,Mortons Lane Wind Farm,Victoria,Wind,20
+kml_489,Racecourse Mill,Queensland,Biomass,3.5

@@ -1,0 +1,7 @@
+man/*
+data/AEMO/MMSDM/PUBLIC_DVD_TRADINGINTERCONNECT_201706010000.CSV
+data/AEMO/MMSDM/intercon_flow.py
+src/**/*.pdf
+src/**/*.pickle
+src/**/*.geojson
+src/**/*.bat

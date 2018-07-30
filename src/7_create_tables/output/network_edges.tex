@@ -1,0 +1,16 @@
+\begin{tabular}{rlllll}
+\toprule
+ Col. &    Col. Name & Format & Units &                        Range &                   Description \\
+\midrule
+ 1 &  LINE\_ID &  str &  - &  - &  Network edge ID \\
+ 2 &  NAME &  str &  - &  - &  Name of network edge \\
+ 3 &  FROM\_NODE &  int &  - &  $1-960$ &  Node ID for origin node \\
+ 4 &  TO\_NODE &  int &  - &  $1-960$ &  Node ID for destination node \\
+ 5 &  R\_PU &  float &  p.u. &  $6.09 \times 10^{-6}-0.407$ &  Per-unit resistance \\
+ 6 &  X\_PU &  float &  p.u. &  $1.52 \times 10^{-5}-0.829$ &  Per-unit reactance \\
+ 7 &  B\_PU &  float &  p.u. &  $1.07 \times 10^{-5}-1.249$ &  Per-unit susceptance \\
+ 8 &  NUM\_LINES &  int &  - &  $1-4$ &  Number of parallel lines \\
+ 9 &  LENGTH\_KM &  float &  km &  $0.03-315.7$ &  Line length \\
+ 10 &  VOLTAGE\_KV &  float &  kV &  $110-500$ &  Line voltage \\
+\bottomrule
+\end{tabular}
