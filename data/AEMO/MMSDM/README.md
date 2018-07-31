@@ -28,3 +28,8 @@ Stations within the NEM. Also provides information allowing DUIDs to be mapped t
 Demand data by NEM region for June 2017. Extracted from monthly data archive. Available at [http://nemweb.com.au/#mms-data-model](http://nemweb.com.au/#mms-data-model)
 
 **Date downloaded:** 25 October 2017
+
+## PUBLIC_DVD_TRADINGINTERCONNECT_201706010000.CSV
+Interconnector flows for June 2017. Extracted from monthly data archive. Available at [http://nemweb.com.au/#mms-data-model](http://nemweb.com.au/#mms-data-model)
+
+**Date downloaded:** 25 October 2017

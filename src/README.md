@@ -9,3 +9,4 @@ Each directory contains a Jupyter Notebook used to perform specific tasks, with 
 | 4_DCOPF | Run direct current optimal powerflow (DCOPF) model using compiled datasets. |
 | 5_UC | Run unit commitment (UC) model using compiled datasets. |
 | 6_plotting | Plot and analyse results of the DCOPF and UC models. Also used to visualise network. |
+| 7_create_tables | Create LaTeX tables summarising datasets |
