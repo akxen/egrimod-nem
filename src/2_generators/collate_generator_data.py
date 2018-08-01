@@ -417,7 +417,13 @@ def get_startup_cost(row):
     return pd.Series({'SU_COST_COLD':row['SU_COST_COLD'] * row['REG_CAP'],
                       'SU_COST_WARM':row['SU_COST_WARM'] * row['REG_CAP'],
                       'SU_COST_HOT':row['SU_COST_HOT'] * row['REG_CAP']})
-df_g_sav[['SU_COST_COLD', 'SU_COST_WARM', 'SU_COST_HOT']] = df_g_sav.apply(get_startup_cost, axis=1)
+startup_costs = df_g_sav.apply(get_startup_cost, axis=1)
+df_g_sav['SU_COST_COLD'] = startup_costs['SU_COST_COLD']
+df_g_sav['SU_COST_WARM'] = startup_costs['SU_COST_WARM']
+df_g_sav['SU_COST_HOT'] = startup_costs['SU_COST_HOT']
+
+# Concatenate startup costs with other generator parameters
+# df_g_sav = pd.concat([df_g_sav, startup_costs], axis=1)
 
 # Express no-load fuel consumption % as a fraction and fill missing entries for hydro plant
 df_g_sav['NL_FUEL_CONS'] = df_g_sav['NL_FUEL_CONS'] / 100

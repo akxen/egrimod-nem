@@ -1317,7 +1317,7 @@ height = width / 1.4
 fig.set_size_inches(width, height)
 
 # Adjust figure
-fig.subplots_adjust(left=0.13, bottom=0.14, right=0.98, top=0.93)
+fig.subplots_adjust(left=0.14, bottom=0.145, right=0.98, top=0.93)
 
 # Save figure
 fig.savefig(os.path.join(paths.output_dir, 'figures', 'aggregate_dispatch_scenarios.pdf'))  

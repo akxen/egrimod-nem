@@ -79,6 +79,12 @@ def add_caption(table, caption, label):
     "Add caption to table"
     return table.replace('\\end{tabular}\n', '\\end{tabular}\n\\caption{%s}\n\\label{%s}\n' % (caption, label))
 
+def wrap_in_table(table):
+    "Wrap tabular in table environment"
+    table = table.replace('\\begin{tabular}', '\\begin{table}\n\\begin{tabular}')
+    table = table + '\\end{table}'
+    return table
+
 
 def format_table(df_out, caption, label, filename, add_caption_and_label=False):
     "Format table to add caption and labels"
@@ -95,9 +101,10 @@ def format_table(df_out, caption, label, filename, add_caption_and_label=False):
     # Raw table
     table = df_out.to_latex(escape=False,  index=False, multicolumn=False)
 
-    # Add caption and labels
+    # Add caption and labels and wrap in table environment
     if add_caption_and_label:
         table_out = add_caption(table, caption=caption, label=label)
+        table_out = wrap_in_table(table_out)
     else:
         table_out = table
 
@@ -134,7 +141,7 @@ def create_network_nodes_table():
     df_out.loc['LONGITUDE'] = {'Format': 'float', 'Units': 'E$^{\circ}$', 'Range': get_numerical_range(df, 'LONGITUDE', round_lower=1, round_upper=1), 'Description': 'Longitude (GDA94)'}
     
     # Output table after formatting
-    table_out = format_table(df_out, caption='Network nodes dataset summary', label='tab: nodes', filename='network_nodes.tex')
+    table_out = format_table(df_out, caption='Network nodes dataset summary', label='tab: nodes', filename='network_nodes.tex', add_caption_and_label=True)
     
     return table_out
 
@@ -167,7 +174,7 @@ def create_network_edges_table():
     df_out.loc['VOLTAGE_KV'] = {'Format': 'float', 'Units': 'kV', 'Range': get_numerical_range(df, 'VOLTAGE_KV', no_round=True), 'Description': 'Line voltage'}
 
      # Output table after formatting
-    table_out = format_table(df_out, caption='Network edges dataset summary', label='tab: edges', filename='network_edges.tex')
+    table_out = format_table(df_out, caption='Network edges dataset summary', label='tab: edges', filename='network_edges.tex', add_caption_and_label=True)
     
     return table_out
 create_network_edges_table()
@@ -194,7 +201,7 @@ def create_hvdc_links_table():
     df_out.loc['VOLTAGE_KV'] = {'Format': 'float', 'Units': 'kV', 'Range': get_numerical_range(df, 'VOLTAGE_KV', no_round=True), 'Description': 'HVDC link voltage'}
 
     # Output table after formatting
-    table_out = format_table(df_out, caption='Network HVDC links dataset summary', label='tab: hvdc links', filename='network_hvdc_links.tex')
+    table_out = format_table(df_out, caption='Network HVDC links dataset summary', label='tab: hvdc links', filename='network_hvdc_links.tex', add_caption_and_label=True)
     
     return table_out
 create_hvdc_links_table()
@@ -222,13 +229,13 @@ def create_ac_interconnector_links_table():
     df_out.loc['VOLTAGE_KV'] = {'Format': 'float', 'Units': 'kV', 'Range': get_numerical_range(df, 'VOLTAGE_KV', no_round=True), 'Description': 'Line voltage'}
 
      # Output table after formatting
-    table_out = format_table(df_out, caption='AC interconnector locations dataset summary', label='tab: ac interconnector links', filename='network_ac_interconnector_links.tex')
+    table_out = format_table(df_out, caption='AC interconnector locations dataset summary', label='tab: interconnectors - links', filename='network_ac_interconnector_links.tex', add_caption_and_label=True)
 
     return table_out
 create_ac_interconnector_links_table()
 
 
-# ### AC interconnector flow limits
+# ### Interconnector flow limits
 
 # In[8]:
 
@@ -249,7 +256,7 @@ def create_ac_interconnector_flow_limits_table():
     df_out.loc['REVERSE_LIMIT_MW'] = {'Format': 'float', 'Units': 'MW', 'Range': get_numerical_range(df, 'REVERSE_LIMIT_MW', no_round=True), 'Description': "`To' node to `From' node power-flow limit"}
 
     # Output table after formatting
-    table_out = format_table(df_out, caption='AC interconnector flow limits summary', label='tab: ac interconnector flow limits', filename='network_ac_interconnector_flow_limits.tex')
+    table_out = format_table(df_out, caption='AC interconnector flow limits summary', label='tab: interconnectors - flow limits', filename='network_ac_interconnector_flow_limits.tex', add_caption_and_label=True)
 
     return table_out
 create_ac_interconnector_flow_limits_table()
@@ -332,6 +339,25 @@ def create_generators_tables():
 
     table_out = format_table(df_out, caption='Generator dataset summary', label='tab: generator dataset', filename='generators.tex')
     
+    # Wrap in three part table. Append environments to beginning of tabular
+    table_out = '\\begin{table}\n\\begin{threeparttable}\n\\centering\n\\small' + table_out
+    
+    # Append table notes and environment to end of table
+    append_to_end = """\\begin{tablenotes}
+    \\item[$\\dagger$] Where no source is given, the value has been derived as part of the dataset construction procedure. NEM\\_REGION and NEM\\_ZONE were found by determining the region and zone of each generator's assigned node. FUEL\\_CAT assigns a generic category to FUEL\\_TYPE. MIN\\_GEN was computed by combining minimum output as a proportion of nameplate capacity from~\cite{aemo_ntndp_2018} with registered capacities from~\\cite{aemo_data_2018}. SRMC\\_2016-17 is calculated from VOM, HEAT\\_RATE, and FC\\_2016-17 fields, using Equation~\\ref{eqn: SRMC calculation}.
+    \\item[$\\ddagger$] While not explicitly stated, it is assumed that a lower heating value is referred to. This is consistent with another field in~\\cite{aemo_ntndp_2018} that gives DUID thermal efficiency in terms of lower heating values. 
+    \\end{tablenotes}
+    \\end{threeparttable}
+    \\caption{Generator dataset summary}
+    \\label{tab: generator dataset}
+    \\end{table}"""
+    
+    table_out = table_out + append_to_end    
+    
+    # Save to file
+    with open(os.path.join(output_dir, 'generators.tex'), 'w') as f:
+        f.write(table_out)
+    
     return table_out
 create_generators_tables()
 
@@ -355,7 +381,7 @@ def create_load_signals_table():
     df_out.loc['TAS1'] = {'Format': 'float', 'Units': 'MW', 'Range': get_numerical_range(df, 'TAS1', round_lower=1, round_upper=1), 'Description': 'Tasmania demand signal'}
     df_out.loc['VIC1'] = {'Format': 'float', 'Units': 'MW', 'Range': get_numerical_range(df, 'VIC1', round_lower=1, round_upper=1), 'Description': 'Victoria demand signal'}
 
-    table_out = format_table(df_out, caption='Regional demand signals dataset summary', label='tab: regional demand signals', filename='signals_regional_demand.tex')
+    table_out = format_table(df_out, caption='Regional demand signals dataset summary', label='tab: regional demand signals', filename='signals_regional_demand.tex', add_caption_and_label=True)
 
     return table_out
 create_load_signals_table()
@@ -381,7 +407,10 @@ df_out = df_out.reset_index()
 # Raw table
 table = df_out.to_latex(escape=False, index=False, multicolumn=False)
 
+table_out = add_caption(table, caption='DUID dispatch profiles. Columns correspond to DUIDs.', label='tab: duid dispatch profiles')
+table_out = wrap_in_table(table_out)
+
 # Save to file
 with open(os.path.join(output_dir, 'signals_dispatch.tex'), 'w') as f:
-    f.write(table)
+    f.write(table_out)
 

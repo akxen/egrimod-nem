@@ -1,4 +1,7 @@
-\begin{tabular}{rllllll}
+\begin{table}
+\begin{threeparttable}
+\centering
+\small\begin{tabular}{rllllll}
 \toprule
  Col. &                     Col. Name & Format &          Units &        Range &                                                Description &                 Source\tnote{$\dagger$} \\
 \midrule
@@ -21,8 +24,8 @@
  17 &  MIN\_ON\_TIME &  int &  h &  $0-16$ &  Minimum on time &  \cite{aemo_ntndp_2018} \\
  18 &  MIN\_OFF\_TIME &  int &  h &  $0-16$ &  Minimum off time &  \cite{aemo_ntndp_2018} \\
  19 &  SU\_COST\_COLD &  int &  \$ &  $0-260400$ &  Cold start start-up cost &  \cite{aemo_ntndp_2018} \\
- 20 &  SU\_COST\_WARM &  int &  \$ &  $0-29760$ &  Warm start start-up cost &  \cite{aemo_ntndp_2018} \\
- 21 &  SU\_COST\_HOT &  int &  \$ &  $0-89280$ &  Hot start start-up cost &  \cite{aemo_ntndp_2018} \\
+ 20 &  SU\_COST\_WARM &  int &  \$ &  $0-89280$ &  Warm start start-up cost &  \cite{aemo_ntndp_2018} \\
+ 21 &  SU\_COST\_HOT &  int &  \$ &  $0-29760$ &  Hot start start-up cost &  \cite{aemo_ntndp_2018} \\
  22 &  VOM &  float &  \$/MWh &  $0.0-12.5$ &  Variable operations and maintenance costs &  \cite{aemo_ntndp_2018} \\
  23 &  HEAT\_RATE\tnote{$\ddagger$} &  float &  GJ/MWh &  $0.0-15.7$ &  Heat rate &  \cite{aemo_ntndp_2018} \\
  24 &  NL\_FUEL\_CONS &  float &  - &  $0.0-0.3$ &  No-load fuel consumption as a \% of full load consumption &  \cite{aemo_ntndp_2018} \\
@@ -30,3 +33,11 @@
  26 &  SRMC\_2016-17 &  float &  \$/MWh &  $0.0-129.7$ &  Short-run marginal cost for the year 2016-17 &   \\
 \bottomrule
 \end{tabular}
+\begin{tablenotes}
+    \item[$\dagger$] Where no source is given, the value has been derived as part of the dataset construction procedure. NEM\_REGION and NEM\_ZONE were found by determining the region and zone of each generator's assigned node. FUEL\_CAT assigns a generic category to FUEL\_TYPE. MIN\_GEN was computed by combining minimum output as a proportion of nameplate capacity from~\cite{aemo_ntndp_2018} with registered capacities from~\cite{aemo_data_2018}. SRMC\_2016-17 is calculated from VOM, HEAT\_RATE, and FC\_2016-17 fields, using Equation~\ref{eqn: SRMC calculation}.
+    \item[$\ddagger$] While not explicitly stated, it is assumed that a lower heating value is referred to. This is consistent with another field in~\cite{aemo_ntndp_2018} that gives DUID thermal efficiency in terms of lower heating values. 
+    \end{tablenotes}
+    \end{threeparttable}
+    \caption{Generator dataset summary}
+    \label{tab: generator dataset}
+    \end{table}
