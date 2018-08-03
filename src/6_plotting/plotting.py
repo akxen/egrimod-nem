@@ -1230,30 +1230,34 @@ for ax_name, res_obj, pos in res_objs:
     # If output is zero, set = 1 (so can be plotted on log-log scale)
     mask = mod_dispatch == 0
     mod_dispatch = mod_dispatch.replace(mod_dispatch[mask], 1)
-
-    
+        
     if ax_name == 'ax2':
         ax = plt.subplot(int('23{0}'.format(pos)), sharex=axes['ax5'], sharey=axes['ax1'])
         plt.setp(ax.get_xticklabels(), visible=False)
         plt.setp(ax.get_yticklabels(), visible=False)
-        plt.title('Linear objective')
+        plt.title('Linear objective', fontsize=10)
         
     elif ax_name == 'ax1':
         ax = plt.subplot(int('23{0}'.format(pos)), sharex=axes['ax4'])
         plt.setp(ax.get_xticklabels(), visible=False)
-        plt.title('Min. deviations')
+        plt.setp(ax.get_yticklabels(), fontsize=9)
+        plt.title('Min. deviations', fontsize=10)
         
     elif ax_name == 'ax3':
         ax = plt.subplot(int('23{0}'.format(pos)), sharey=axes['ax1'])
         plt.setp(ax.get_yticklabels(), visible=False)
-        plt.title('UC model')
+        plt.setp(ax.get_xticklabels(), fontsize=9)
+        plt.title('UC model', fontsize=10)
         
     elif ax_name == 'ax5':
         ax = plt.subplot(int('23{0}'.format(pos)), sharey=axes['ax4'])
         plt.setp(ax.get_yticklabels(), visible=False)
+        plt.setp(ax.get_xticklabels(), fontsize=9)
         
     else:
         ax = plt.subplot(int('23{0}'.format(pos)))
+        plt.setp(ax.get_yticklabels(), fontsize=9)
+        plt.setp(ax.get_xticklabels(), fontsize=9)
        
     plt.scatter(x=list(mod_dispatch), y=list(obs_dispatch.reindex(mod_dispatch.index)),
                      c=list(stations.loc[mod_dispatch.index, 'FUEL_CAT'].map(lambda x: col_gen[x])),
@@ -1285,17 +1289,20 @@ for ax_name, res_obj, pos in res_objs:
     axes[ax_name] = ax
 
 # Name axes
-axes['ax1'].set_ylabel('Reduced Network \n Observed dispatch (MWh)')
-axes['ax1'].set_xlabel('(a)')
+axes['ax1'].set_ylabel('Reduced Network \n Observed dispatch (MWh)', fontsize=9)
+axes['ax1'].text(-0.08, 1.03, 'a', fontweight='bold', transform=axes['ax1'].transAxes)
 
-axes['ax2'].set_xlabel('(b)')
+axes['ax2'].text(-0.08, 1.03, 'b', fontweight='bold', transform=axes['ax2'].transAxes)
 
-axes['ax3'].set_xlabel('(c) \n Model dispatch (MWh)')
+axes['ax3'].set_xlabel('Model dispatch (MWh)', fontsize=9)
+axes['ax3'].text(-0.08, 1.03, 'c', fontweight='bold', transform=axes['ax3'].transAxes)
 
-axes['ax4'].set_ylabel('Full network \n Observed dispatch (MWh)')
-axes['ax4'].set_xlabel('(d) \n Model dispatch (MWh)')
+axes['ax4'].set_ylabel('Full network \n Observed dispatch (MWh)', fontsize=9)
+axes['ax4'].set_xlabel('Model dispatch (MWh)', fontsize=9)
+axes['ax4'].text(-0.08, 1.03, 'd', fontweight='bold', transform=axes['ax4'].transAxes)
 
-axes['ax5'].set_xlabel('(e) \n Model dispatch (MWh)')
+axes['ax5'].set_xlabel('Model dispatch (MWh)', fontsize=9)
+axes['ax5'].text(-0.08, 1.03, 'e', fontweight='bold', transform=axes['ax5'].transAxes)
 
 
 # Create legend
@@ -1305,7 +1312,7 @@ pt_fossil = axes['ax5'].scatter(10, 10, c=col_gen['Fossil'], alpha=0.6, s=80, la
 pt_hydro = axes['ax5'].scatter(10, 10, c=col_gen['Hydro'], alpha=0.6, s=80, label='Hydro')
 
 # Create legend
-axes['ax5'].legend(bbox_to_anchor=(1.2, 0.7), loc=2, borderaxespad=0.)
+axes['ax5'].legend(bbox_to_anchor=(1.2, 0.7), loc=2, borderaxespad=0., fontsize=10)
 
 # Remove dummy points
 pt_fossil.remove()
@@ -1415,9 +1422,9 @@ ax3.set_ylim(-44, -9)
 ax3.set_aspect('equal')
 ax3.set_axis_off()
 
-ax1.text(0.5, -0.05, "(a)", size=12, ha="center", transform=ax1.transAxes, fontsize=9)
-ax2.text(0.5, -0.05, "(b)", size=12, ha="center", transform=ax2.transAxes, fontsize=9)
-ax3.text(0.5, -0.05, "(c)", size=12, ha="center", transform=ax3.transAxes, fontsize=9)
+ax1.text(0.5, -0.05, 'a', fontweight='bold', transform=ax1.transAxes)
+ax2.text(0.5, -0.05, 'b', fontweight='bold', transform=ax2.transAxes)
+ax3.text(0.5, -0.05, 'c', fontweight='bold', transform=ax3.transAxes)
 
 # Re-size figure
 width = 5.94114
@@ -1484,12 +1491,12 @@ for pt in dummy_points:
     pt.remove()
 
 # NEM zones
-network_data.gdf_nem_zones.plot(cmap='tab20', alpha=0.4, ax=ax1)
+network_data.gdf_nem_zones.simplify(0.01).plot(cmap='tab20', alpha=0.4, ax=ax1)
 
 ax1.set_xlim([128, 155])
 ax1.set_aspect('equal')
 ax1.set_axis_off()
-ax1.text(0.54, 0, "(a)", size=10, ha="center", transform=ax1.transAxes)
+ax1.text(0.025, 0.912, 'a', fontweight='bold', transform=ax1.transAxes)
 
 
 # Generators subplot
@@ -1537,7 +1544,8 @@ for pt in dummy_points:
 ax2.set_xlim([128, 155])
 ax2.set_aspect('equal')
 ax2.set_axis_off()
-ax2.text(0.555, 0, "(b)", size=10, ha="center", transform=ax2.transAxes)
+# ax2.text(0.555, 0, 'b', fontweight='bold', transform=ax2.transAxes)
+ax2.text(-0.018, 0.912, 'b', fontweight='bold', transform=ax2.transAxes)
 
 
 # Demand subplot
@@ -1572,7 +1580,8 @@ ax3.set_yscale('log')
 ax3.legend(ncol=5, bbox_to_anchor=(0.5, 1.05), loc='center', fontsize=8, handletextpad=0.1, columnspacing=0.3, frameon=False)
 
 # Format labels
-ax3.set_xlabel('(c)')
+# ax3.set_xlabel('c', fontweight='bold')
+ax3.text(-0.12, 1.15, 'c', fontweight='bold', transform=ax3.transAxes)
 ax3.set_ylabel('Demand (MW)')
 
 
@@ -1609,7 +1618,7 @@ ax4.yaxis.set_minor_formatter(ticker.NullFormatter())
 
 ax4.legend(ncol=4, bbox_to_anchor=(0.5, 1.05), loc='center', fontsize=8, handletextpad=0.1, columnspacing=0.3, frameon=False)
 ax4.set_ylabel('Generation (MW)')
-ax4.set_xlabel('(d)')
+ax4.text(-0.12, 1.15, 'd', fontweight='bold', transform=ax4.transAxes)
 
 
 # Format figure
@@ -1768,14 +1777,20 @@ ax3.set_title('Linear objective', fontsize=9)
 ax4.set_title('UC model', fontsize=9)
 
 # xlabels
-ax1.set_xlabel('(a)', fontsize=8, labelpad=0)
-ax2.set_xlabel('(b)', fontsize=8, labelpad=0)
-ax3.set_xlabel('(c)', fontsize=8, labelpad=0)
+ax1.text(0.5, 0.03, 'a', fontweight='bold', transform=ax1.transAxes)
+ax2.text(0.5, 0.03, 'b', fontweight='bold', transform=ax2.transAxes)
+ax3.text(0.5, 0.03, 'c', fontweight='bold', transform=ax3.transAxes)
+ax4.text(0.5, 0.03, 'd', fontweight='bold', transform=ax4.transAxes)
+ax5.text(0.5, 0.03, 'e', fontweight='bold', transform=ax5.transAxes)
+ax6.text(0.5, 0.03, 'f', fontweight='bold', transform=ax6.transAxes)
+ax7.text(0.5, 0.03, 'g', fontweight='bold', transform=ax7.transAxes)
+# ax3.set_xlabel('c', fontweight='bold', fontsize=8, labelpad=0)
+# ax3.text(-0.08, 1.05, 'c', fontweight='bold', transform=ax3.transAxes)
 
-ax4.set_xlabel('(d)\nModel flow (MWh)', fontsize=8, labelpad=0)
-ax5.set_xlabel('(e)\nModel flow (MWh)', fontsize=8, labelpad=0)
-ax6.set_xlabel('(f)\nModel flow (MWh)', fontsize=8, labelpad=0)
-ax7.set_xlabel('(g)\nModel flow (MWh)', fontsize=8, labelpad=0)
+ax4.set_xlabel('Model flow (MWh)', fontsize=8, labelpad=0)
+ax5.set_xlabel('Model flow (MWh)', fontsize=8, labelpad=0)
+ax6.set_xlabel('Model flow (MWh)', fontsize=8, labelpad=0)
+ax7.set_xlabel('Model flow (MWh)', fontsize=8, labelpad=0)
 
 # ylabels
 ax1.set_ylabel('Reduced network\nObserved flow (MWh)', fontsize=8, labelpad=0)
@@ -1918,11 +1933,10 @@ for ax in [ax1, ax2]:
     for i in ax.get_xticklabels():
         i.set_visible(False)
 
-ax1.set_xlabel('(a) Bayswater')
-ax2.set_xlabel('(b) Eraring')
-ax3.set_xlabel('(c) Vales Point B\nHour')
-ax4.set_xlabel('(d) Torrens Island\nHour')
-
+ax1.text(0.04, 0.06, 'a', fontweight='bold', transform=ax1.transAxes)
+ax2.text(0.04, 0.06, 'b', fontweight='bold', transform=ax2.transAxes)
+ax3.text(0.04, 0.85, 'c', fontweight='bold', transform=ax3.transAxes)
+ax4.text(0.04, 0.85, 'd', fontweight='bold', transform=ax4.transAxes)
 fig.subplots_adjust(wspace=0.06, hspace=0.25)
 
 # Format axes

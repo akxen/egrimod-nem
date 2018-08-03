@@ -81,7 +81,7 @@ def add_caption(table, caption, label):
 
 def wrap_in_table(table):
     "Wrap tabular in table environment"
-    table = table.replace('\\begin{tabular}', '\\begin{table}\n\\begin{tabular}')
+    table = table.replace('\\begin{tabular}', '\\begin{table}[H]\n\\begin{tabular}')
     table = table + '\\end{table}'
     return table
 
@@ -303,7 +303,7 @@ def create_generators_tables():
     df_out.loc['SU_COST_HOT'] = {'Format': 'int', 'Units': '\$', 'Range': get_numerical_range(df, 'SU_COST_HOT', no_round=True), 'Description': 'Hot start start-up cost'}
     df_out.loc['VOM'] = {'Format': 'float', 'Units': '\$/MWh', 'Range': get_numerical_range(df, 'VOM', no_round=True), 'Description': 'Variable operations and maintenance costs'}
     df_out.loc['HEAT_RATE'] = {'Format': 'float', 'Units': 'GJ/MWh', 'Range': get_numerical_range(df, 'HEAT_RATE', round_lower=1, round_upper=1), 'Description': 'Heat rate'}
-    df_out.loc['NL_FUEL_CONS'] = {'Format': 'float', 'Units': '-', 'Range': get_numerical_range(df, 'NL_FUEL_CONS', no_round=True), 'Description': 'No-load fuel consumption as a \% of full load consumption'}
+    df_out.loc['NL_FUEL_CONS'] = {'Format': 'float', 'Units': '-', 'Range': get_numerical_range(df, 'NL_FUEL_CONS', no_round=True), 'Description': 'No-load fuel consumption as a proportion of full load consumption'}
     df_out.loc['FC_2016-17'] = {'Format': 'float', 'Units': '\$/GJ', 'Range': get_numerical_range(df, 'FC_2016-17', round_lower=1, round_upper=1), 'Description': 'Fuel cost for the year 2016-17'}
     df_out.loc['SRMC_2016-17'] = {'Format': 'float', 'Units': '\$/MWh', 'Range': get_numerical_range(df, 'SRMC_2016-17', round_lower=1, round_upper=1), 'Description': 'Short-run marginal cost for the year 2016-17'}
 
@@ -340,11 +340,11 @@ def create_generators_tables():
     table_out = format_table(df_out, caption='Generator dataset summary', label='tab: generator dataset', filename='generators.tex')
     
     # Wrap in three part table. Append environments to beginning of tabular
-    table_out = '\\begin{table}\n\\begin{threeparttable}\n\\centering\n\\small' + table_out
+    table_out = '\\begin{table}[H]\n\\begin{threeparttable}\n\\centering\n\\small' + table_out
     
     # Append table notes and environment to end of table
     append_to_end = """\\begin{tablenotes}
-    \\item[$\\dagger$] Where no source is given, the value has been derived as part of the dataset construction procedure. NEM\\_REGION and NEM\\_ZONE were found by determining the region and zone of each generator's assigned node. FUEL\\_CAT assigns a generic category to FUEL\\_TYPE. MIN\\_GEN was computed by combining minimum output as a proportion of nameplate capacity from~\cite{aemo_ntndp_2018} with registered capacities from~\\cite{aemo_data_2018}. SRMC\\_2016-17 is calculated from VOM, HEAT\\_RATE, and FC\\_2016-17 fields, using Equation~\\ref{eqn: SRMC calculation}.
+    \\item[$\\dagger$] Where no source is given, the value has been derived as part of the dataset construction procedure. NEM\\_REGION and NEM\\_ZONE were found by determining the region and zone of each generator's assigned node. FUEL\\_CAT assigns a generic category to FUEL\\_TYPE. MIN\\_GEN was computed by combining minimum output as a proportion of nameplate capacity from~\cite{aemo_ntndp_2018} with registered capacities from~\\cite{aemo_data_2018}. SRMC\\_2016-17 is calculated from VOM, HEAT\\_RATE, and FC\\_2016-17 fields, using equation~(\\ref{eqn: SRMC calculation}).
     \\item[$\\ddagger$] While not explicitly stated, it is assumed that a lower heating value is referred to. This is consistent with another field in~\\cite{aemo_ntndp_2018} that gives DUID thermal efficiency in terms of lower heating values. 
     \\end{tablenotes}
     \\end{threeparttable}
