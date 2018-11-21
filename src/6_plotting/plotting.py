@@ -510,7 +510,7 @@ class InteractiveNetworkMap(NetworkData):
         df_text = df_conel.apply(lambda x: [', '.join([' - '.join((i[0], i[1])) for i in zip(i, gdf_e.loc[i,'name'].values)]) for i in x], axis=1)
 
         # Reindex and convert to series
-        df_text = df_text.reindex(gdf_n.index)['index']
+        df_text = df_text.reindex(gdf_n.index)
         
         for index, n in gdf_n.iterrows():
             # If some elements are connected to a given node, extract them and construct a string
@@ -980,7 +980,7 @@ class UCResults(ModelData):
 
         # Dataframe with UC model variable results
         df_uc = pd.DataFrame(data=self.results['Solution'][0]['Variable']).T
-        df_uc['SET_NAME'] = df_uc.apply(lambda x: re.findall('(.+)\[', x.name), axis=1)
+        df_uc['SET_NAME'] = df_uc.apply(lambda x: re.findall('(.+)\[', x.name)[0], axis=1)
 
         # Drop dummy variable indices for now
         mask = df_uc.index.str.startswith('x1_dummy') | df_uc.index.str.startswith('x2_dummy')
@@ -1130,7 +1130,7 @@ class UCResults(ModelData):
 
 
 # ## Model results
-# Instatiate classes used to extract model results.
+# Instantiate objects used to extract model results.
 
 # In[15]:
 

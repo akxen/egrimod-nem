@@ -25,7 +25,7 @@ Network and generator datasets constructed using code in this repository are  al
 * This dataset does not contain information related to power system components that provide reactive power support to the grid e.g. capacitor banks. Information related to these network elements may be included in the future if additional data become available.
 
 ## Setup notes
-Creating a conda environment is strongly recommended. Please note that conda-forge was used to install some packages, in particular [osmnx](https://anaconda.org/conda-forge/osmnx).
+Creating a conda environment is strongly recommended. An `environment.yml` file is included within the `src` folder which may assist in setting up a working environment. Please also note that several packages have been installed using conda-forge.
 
 ## Usage notes
 If running for the first time, execute notebooks in the order in which they appear (e.g. first execute the notebook within `1_network`, then execute the notebook within `2_generators` and so on).
