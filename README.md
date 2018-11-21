@@ -17,12 +17,15 @@ The code used to construct the network and generator datasets, and also implemen
 | create_tables | Create LaTeX tables summarising datasets |
 
 ## Zenodo link
-Network and generator datasets constructed using code in this repository are  also listed at the following repository: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1218805.svg)](https://doi.org/10.5281/zenodo.1218805)
+Network and generator datasets constructed using code in this repository are  also listed at the following repository: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1326942.svg)](https://doi.org/10.5281/zenodo.1326942)
 
 
 
 ## Caveats
 * This dataset does not contain information related to power system components that provide reactive power support to the grid e.g. capacitor banks. Information related to these network elements may be included in the future if additional data become available.
+
+## Setup notes
+Creating a conda environment is strongly recommended. Please note that conda-forge was used to install some packages, in particular [osmnx](https://anaconda.org/conda-forge/osmnx).
 
 ## Usage notes
 If running for the first time, execute notebooks in the order in which they appear (e.g. first execute the notebook within `1_network`, then execute the notebook within `2_generators` and so on).
