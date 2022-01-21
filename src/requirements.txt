@@ -20,7 +20,7 @@ GDAL==2.2.4
 geopandas==0.4.0
 idna==2.7
 ipykernel==5.1.0
-ipython==7.1.1
+ipython==7.16.3
 ipython-genutils==0.2.0
 jedi==0.13.1
 Jinja2==2.10
